@@ -4,7 +4,9 @@ Interaktivní průvodce skládáním Rubikovy kostky pro začátečníky. Zatím
 
 Úvodní stránka (`#/`) je rozcestník s výběrem kostky (živé 3D náhledy, odkaz „Pokračovat“ na poslední rozdělaný krok). Průvodce má adresy `#/2x2/<krok>`, `#/3x3`, `#/4x4`.
 
-Spuštění: stačí otevřít `index.html` v prohlížeči (bez buildu, bez serveru, bez závislostí kromě Google Fonts).
+Web: https://matty-080.github.io/rubiks/ (GitHub Pages z větve `main`, nasadí se samo po každém pushi).
+
+Spuštění lokálně: stačí otevřít `index.html` v prohlížeči (bez buildu, bez serveru, bez závislostí kromě Google Fonts).
 
 ## Struktura
 
