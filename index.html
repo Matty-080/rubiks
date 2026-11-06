@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rubikovka – kostka krok za krokem</title>
+<meta name="description" content="Interaktivní návod pro začátečníky: slož Rubikovu kostku 2×2 krok za krokem, s 3D přehrávačem algoritmů.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect x='1' y='1' width='9.3' height='9.3' rx='2' fill='%23ffd500'/%3E%3Crect x='11.7' y='1' width='9.3' height='9.3' rx='2' fill='%2306a35a'/%3E%3Crect x='1' y='11.7' width='9.3' height='9.3' rx='2' fill='%23d62839'/%3E%3Crect x='11.7' y='11.7' width='9.3' height='9.3' rx='2' fill='%231f5fd1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bar">
+  <a class="brand" href="#/" title="Rozcestník – výběr kostky"><span class="dot"></span><b>Rubikovka</b></a>
+  <span>Kostka: <b id="bar-model">—</b></span>
+  <span class="hide-s">Metoda: <b>vrstvy</b></span>
+  <span>Krok: <b id="bar-step">00</b></span>
+  <span class="sp"></span>
+  <button class="theme-btn" id="theme" title="Přepnout motiv">◐ auto</button>
+</div>
+<main>
+ <section id="home" class="home" hidden>
+  <div class="lbl">// Rozcestník · Rubikova kostka</div>
+  <h1>Jakou kostku <em>chceš složit?</em></h1>
+  <p class="lead">Vyber si kostku. Průvodce tě provede krok za krokem – tah po tahu, na 3D kostce, kterou si můžeš otáčet. Bez videa, vlastním tempem.</p>
+  <div id="resume"></div>
+  <div class="pick" id="pick"></div>
+  <div class="home-how">
+    <div><span>01</span><b>Vyber kostku</b><p>Začni tou, kterou máš doma. Nejjednodušší je 2×2.</p></div>
+    <div><span>02</span><b>Poznej situaci</b><p>Podle obrázků najdeš, jak tvoje kostka právě vypadá.</p></div>
+    <div><span>03</span><b>Přehraj tahy</b><p>Šipka na 3D kostce ukáže každý tah. Krok vpřed, krok zpět.</p></div>
+  </div>
+ </section>
+ <section id="guide-view" hidden>
+  <a class="back" href="#/">← Zpět na výběr kostky</a>
+  <div class="lbl">// Průvodce · Rubikova kostka</div>
+  <h1>Slož kostku <em>krok za krokem</em></h1>
+  <p class="lead">Žádné video. Vyber si, jak tvoje kostka právě vypadá, a průvodce ti ukáže, co udělat dál – tah po tahu, na 3D kostce, kterou si můžeš otáčet.</p>
+  <div class="puzzles" id="puzzles"></div>
+  <nav class="stepper" id="stepper" aria-label="Kroky"></nav>
+  <div class="layout">
+    <aside class="stage" id="stage" aria-label="Kostka a přehrávač"></aside>
+    <div class="content" id="content"></div>
+  </div>
+ </section>
+  <footer><span><b>Rubikovka</b> // návod pro začátečníky</span><span>← → tahy · mezerník přehrát</span></footer>
+</main>
+<script src="js/cube.js"></script>
+<script src="js/solver2x2.js"></script>
+<script src="js/view3d.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/guide2x2.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
